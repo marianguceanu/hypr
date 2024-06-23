@@ -14,4 +14,4 @@ dunst &
 waybar &
 
 # Wallpaper
-swaybg -i ~/Pictures/wallpapers/wall.jpg 
+swaybg -i ~/Pictures/wallpapers/wall2.jpg 
