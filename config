@@ -4,16 +4,15 @@
 		"height": 32, // Waybar height (to be removed for auto height)
 		"modules-left": [
 			"hyprland/workspaces",
-			"clock",
-		"wlr/taskbar",
-			"hyprland/window",
+			"wlr/taskbar",
 		],
 		"modules-center": [
+			"clock",
 		],
 		"modules-right": [
-			"battery",
-		"pulseaudio",
 		"hyprland/language",
+		"battery",
+		"pulseaudio",
 		"disk",
 		"backlight",
 		"tray",
@@ -24,9 +23,9 @@
 			"warp-on-scroll": false,
 			"format": "{name}",
 			"format-icons": {
-				"1": "",
-				"2": "",
-				"3": "",
+				"1": "",
+				"2": "",
+				"3": "",
 				"4": "",
 				"5": "",
 				"6": "",
@@ -42,6 +41,7 @@
 			}
 		},
 		"wlr/taskbar": {
+			"all-outputs":false,
 			"format": "{icon}",
 			"icon-size": 20,
 			"tooltip-format": "{title}",
