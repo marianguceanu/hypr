@@ -8,10 +8,7 @@ blueman-applet &
 
 # Start dunst
 killall dunst
-dunst &
+swaync &
 
 # Start waybar
 waybar &
-
-# Wallpaper
-waypaper --restore
