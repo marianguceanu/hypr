@@ -5,7 +5,7 @@
 }
 
 window#waybar {
-	background-color: #14161B;
+	background-color: #24262B;
 }
 
 window#waybar.hidden {
@@ -42,6 +42,7 @@ button:hover {
 #workspaces .active {
 	color: #FFFFFF;
   border-bottom: 3px solid #FFFFFF;
+	background-color: #34363b;
 }
 
 #workspaces button {
@@ -270,12 +271,12 @@ label:focus {
 }
 
 #taskbar {
-	color: #FFFFFF;
 	margin: 0 10px;
 }
 
 #taskbar .active {
-  border-bottom: 3px solid #FFFFFF;
+  border-bottom: 3px solid #64666b;
+	background-color: #34363b;
 }
 
 #taskbar button {
