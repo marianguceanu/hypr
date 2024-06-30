@@ -5,7 +5,7 @@
 }
 
 window#waybar {
-	background-color: #24262B;
+	background-color: #14161B;
 }
 
 window#waybar.hidden {
@@ -24,14 +24,13 @@ window#waybar.brave-browser {
 }
 
 button {
-  box-shadow: inset 0 -3px transparent;
   border: none;
-  border-radius: 0px;
+  border-radius: 4px;
 }
 
 button:hover {
   background: inherit;
-  box-shadow: inset 0 -3px #ffffff;
+  box-shadow: inset 0 -3px #215578;
 }
 
 #workspaces {
@@ -41,8 +40,9 @@ button:hover {
 
 #workspaces .active {
 	color: #FFFFFF;
-  border-bottom: 3px solid #FFFFFF;
-	background-color: #34363b;
+	background-color: #215578;
+	border:none;
+	border-radius: 4px;
 }
 
 #workspaces button {
@@ -63,7 +63,6 @@ button:hover {
 
 #mode {
   background-color: #64727d;
-  border-bottom: 3px solid #ffffff;
 }
 
 #cpu,
@@ -76,7 +75,7 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #mpd {
-  color: #ffffff;
+  color: #FFFFFF;
 	padding: 0 5px;
 }
 
@@ -97,8 +96,7 @@ button:hover {
 }
 
 #clock {
-	padding: 0 10px;
-	margin: 0 10px;
+	margin: 0 5px;
 	color: #FFFFFF;
 }
 
@@ -144,7 +142,7 @@ label:focus {
 
 #disk {
 	color: #FFFFFF;
-	margin: 0 10px;
+	margin: 0 5px;
 }
 
 #backlight {
@@ -162,12 +160,12 @@ label:focus {
 
 #pulseaudio {
 	color: #FFFFFF;
-	margin: 0 10px;
+	margin: 0 5px;
 }
 
 #pulseaudio.muted {
 	color: #FFFFFF;
-	margin: 0 10px;
+	margin: 0 5px;
 }
 
 #wireplumber {
@@ -271,16 +269,19 @@ label:focus {
 }
 
 #taskbar {
-	margin: 0 10px;
+	margin: 0 5px;
 }
 
 #taskbar .active {
-  border-bottom: 3px solid #64666b;
-	background-color: #34363b;
+	background-color: #215578;
+	border:none;
+	border-radius: 4px;
 }
 
 #taskbar button {
 }
 
 #taskbar button:hover {
+  background: inherit;
+  box-shadow: inset 0 -3px #215578;
 }
