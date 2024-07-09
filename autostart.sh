@@ -13,5 +13,4 @@ swaync &
 # Start waybar
 waybar &
 
-waypaper --restore
 waypaper --restore &

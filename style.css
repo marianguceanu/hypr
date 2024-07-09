@@ -38,6 +38,10 @@ button:hover {
 	border: none;
 }
 
+#workspaces .empty {
+	color: #404040;
+}
+
 #workspaces .active {
 	color: #FFFFFF;
 	background-color: #215578;
@@ -46,7 +50,9 @@ button:hover {
 }
 
 #workspaces button {
-	color: #404040;
+	color: #FFFFFF;
+	margin: 2px;
+	padding: 2px;
 }
 
 #workspaces button:hover {
