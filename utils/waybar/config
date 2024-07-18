@@ -5,17 +5,18 @@
 		"modules-left": [
 			"hyprland/workspaces",
 			"wlr/taskbar",
+			"hyprland/window"
 		],
 		"modules-center": [
 			"clock",
 		],
 		"modules-right": [
-		"hyprland/language",
-		"battery",
-		"pulseaudio",
-		"disk",
-		"backlight",
-		"tray",
+			"hyprland/language",
+			"battery",
+			"pulseaudio",
+			"disk",
+			"backlight",
+			"tray",
 		],
 		"hyprland/workspaces": {
 			"disable-scroll": true,
@@ -23,9 +24,9 @@
 			"warp-on-scroll": false,
 			"format": "{name}",
 			"format-icons": {
-				"1": "",
-				"2": "",
-				"3": "",
+				"1": "",
+				"2": "",
+				"3": "",
 				"4": "",
 				"5": "",
 				"6": "",
@@ -36,9 +37,6 @@
 				"focused": "",
 				"default": ""
 			},
-			"persistent-workspaces": {
-				"*": 9
-			}
 		},
 		"wlr/taskbar": {
 			"all-outputs":false,
@@ -47,6 +45,7 @@
 			"tooltip-format": "{title}",
 			"on-click": "activate",
 			"on-click-middle": "close",
+			"active-first": true,
 		},
 		"keyboard-state": {
 			"numlock": true,
@@ -198,6 +197,14 @@
 			"format-ro": "RO",
 			"keyboard-name": "at-translated-set-2-keyboard",
 			"on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+		},
+		"hyprland/window": {
+			"max-length": 100, // Characters count
+			"separate-outputs": true,
+			"icon": true,
+			"rewrite": {
+				"(.*) - Brave": "Brave",
+			}
 		},
 }
 

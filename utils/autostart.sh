@@ -13,4 +13,5 @@ swaync &
 # Start waybar
 waybar &
 
-waypaper --restore &
+# waypaper --restore &
+swaybg -i ~/Pictures/wallpapers/wall6.jpg
