@@ -1,16 +1,17 @@
 {
 	"layer": "top", // Waybar at top layer
 		"position": "top", // Waybar position (top|bottom|left|right)
-		"height": 32, // Waybar height (to be removed for auto height)
+		"height": 32,
+		"reload_style_on_change": true,
 		"modules-left": [
 			"hyprland/workspaces",
-			"wlr/taskbar",
+			"clock",
 			"hyprland/window"
 		],
 		"modules-center": [
 		],
 		"modules-right": [
-			"clock",
+			"wlr/taskbar",
 			"hyprland/language",
 			"battery",
 			"pulseaudio",
@@ -108,7 +109,7 @@
 		"clock": {
 			// "timezone": "America/New_York",
 			"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-			"format": "{:%H:%M %d %B %Y}",
+			"format": "{:%H:%M | %d %B %Y}",
 			"on-click": "evolution"
 		},
 		"cpu": {
@@ -200,7 +201,7 @@
 			"on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
 		},
 		"hyprland/window": {
-			"max-length": 100, // Characters count
+			"max-length": 200, // Characters count
 			"separate-outputs": true,
 			"icon": true,
 		},
