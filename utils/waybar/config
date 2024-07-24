@@ -8,9 +8,9 @@
 			"hyprland/window"
 		],
 		"modules-center": [
-			"clock",
 		],
 		"modules-right": [
+			"clock",
 			"hyprland/language",
 			"battery",
 			"pulseaudio",
@@ -203,9 +203,6 @@
 			"max-length": 100, // Characters count
 			"separate-outputs": true,
 			"icon": true,
-			"rewrite": {
-				"(.*) - Brave": "Brave",
-			}
 		},
 }
 
