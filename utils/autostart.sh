@@ -8,7 +8,7 @@ blueman-applet &
 
 # Start dunst
 killall dunst
-swaync &
+dunst &
 
 # Start waybar
 waybar &

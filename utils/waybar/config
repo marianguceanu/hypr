@@ -12,6 +12,7 @@
 		],
 		"modules-right": [
 			"wlr/taskbar",
+			"mpd",
 			"hyprland/language",
 			"battery",
 			"pulseaudio",
