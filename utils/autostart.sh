@@ -14,4 +14,4 @@ dunst &
 waybar &
 
 # waypaper --restore &
-swaybg -i ~/Pictures/wallpapers/desktop/wall1.jpg
+swaybg -i ~/Pictures/Wallpapers/2.jpg

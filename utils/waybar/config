@@ -1,46 +1,42 @@
 {
 	"layer": "top", // Waybar at top layer
 		"position": "top", // Waybar position (top|bottom|left|right)
-		"height": 32,
+		"height": 25,
 		"reload_style_on_change": true,
 		"modules-left": [
-			"hyprland/workspaces",
 			"clock",
-			"hyprland/window"
+			"wlr/taskbar",
 		],
 		"modules-center": [
+			"hyprland/workspaces",
 		],
 		"modules-right": [
-			"wlr/taskbar",
-			"mpd",
+			"tray",
+			"pulseaudio",
 			"hyprland/language",
 			"battery",
-			"pulseaudio",
-			"disk",
-			"backlight",
-			"tray",
 		],
 		"hyprland/workspaces": {
 			"disable-scroll": true,
 			"all-outputs": false,
 			"warp-on-scroll": false,
-			"format": "{name}",
+			"format": "{icon}",
 			"format-icons": {
-				"1": "",
-				"2": "",
-				"3": "",
-				"4": "",
-				"5": "",
-				"6": "",
-				"7": "",
-				"8": "",
-				"9": "",
+				"1": "",
+				"2": "󰖟",
+				"3": "󰊻",
+				"4": "",
+				"5": "󰓇",
+				"6": "6",
+				"7": "7",
+				"8": "8",
+				"9": "9",
 				"urgent": "",
 				"focused": "",
 				"default": ""
 			},
 			"persistent-workspaces": {
-				"*": [ 1, 2, 3, 4, 5, 6, 7, 8, 9],			},
+				"*": [ 1, 2, 3, 4, 5],			},
 		},
 		"wlr/taskbar": {
 			"all-outputs":false,
@@ -104,13 +100,13 @@
 			}
 		},
 		"tray": {
-			"icon-size": 21,
+			"icon-size": 20,
 			"spacing": 10
 		},
 		"clock": {
 			// "timezone": "America/New_York",
 			"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-			"format": "{:%H:%M | %d %B %Y}",
+			"format": "{:%H:%M | %d %b %Y}",
 			"on-click": "evolution"
 		},
 		"cpu": {
@@ -152,17 +148,17 @@
 		},
 		"network": {
 			// "interface": "wlp2*", // (Optional) To force the use of this interface
-			"format-wifi": "{essid} ",
+			"format-wifi": "{essid}  ",
 			"format-ethernet": "{ipaddr}/{cidr} ",
 			"tooltip-format": "{ifname} via {gwaddr} ",
 			"format-linked": "{ifname} (No IP) ",
 			"format-disconnected": "Disconnected ⚠",
 			"format-alt": "{ifname}: {ipaddr}/{cidr}",
-			"on-click": "nm-applet"
+			"on-click-right": "alacritty -e nmtui"
 		},
 		"pulseaudio": {
 			// "scroll-step": 1, // %, can be a float
-			"format": "{volume}% {icon}",
+			"format": "{icon}  {volume}%",
 			"format-bluetooth": "{volume}% {icon}",
 			"format-bluetooth-muted": " {icon}",
 			"format-muted": " {format_source}",
